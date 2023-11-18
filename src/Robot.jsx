@@ -28,13 +28,10 @@ function Robot() {
           Robot drawing and testing
         </h1>
         <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <video controls>
-            <source src="/Simply_delivered.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <img src="/SD1.png" alt="Slide 2" />
-          <img src="/SD2.png" alt="Slide 2" />
-          <img src="/SD3.png" alt="Slide 2" />
+          <img src="/robot0.png" alt="Slide 2" />
+          <img src="/robot1.png" alt="Slide 2" />
+          <img src="/robot2.png" alt="Slide 2" />
+          <img src="/robot3.png" alt="Slide 2" />
         </Carousel>
 
         <h2

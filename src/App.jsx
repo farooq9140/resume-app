@@ -300,7 +300,7 @@ function App() {
         <div
           className="centered-divv"
           id="aboutMe-section"
-          style={{ paddingTop: "75px", paddingBottom: "75px",}}
+          style={{ paddingTop: "75px", paddingBottom: "75px" }}
         >
           <h3
             style={{
@@ -329,7 +329,8 @@ function App() {
               fontSize: "20px",
             }}
           >
-            A Computer Engineering graduate from Concordia University in Montreal, Canada,
+            A Computer Engineering graduate from Concordia University in
+            Montreal, Canada,
           </h4>
           <h4
             style={{
@@ -338,8 +339,8 @@ function App() {
               fontSize: "20px",
             }}
           >
-            I love programming, as well as bodybuilding, sports, and
-            learning new things!
+            I love programming, as well as bodybuilding, sports, and learning
+            new things!
           </h4>
           <h4
             style={{
@@ -495,11 +496,17 @@ function App() {
             © Copyright 2023. Made by Farouq HamedAllah
           </h2>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
-            <h2
-              style={{ cursor: "pointer", color: "#646cff", fontWeight: "500" }}
-            >
-              Site source code
-            </h2>
+            <a href="https://github.com/farooq9140/resume-app" target="_blank">
+              <h2
+                style={{
+                  cursor: "pointer",
+                  color: "#646cff",
+                  fontWeight: "500",
+                }}
+              >
+                Site source code
+              </h2>
+            </a>
           </motion.div>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
             <h2

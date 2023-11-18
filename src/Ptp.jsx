@@ -28,13 +28,11 @@ function Ptp() {
           Peer to Peer File System
         </h1>
         <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <video controls>
-            <source src="/Simply_delivered.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <img src="/SD1.png" alt="Slide 2" />
-          <img src="/SD2.png" alt="Slide 2" />
-          <img src="/SD3.png" alt="Slide 2" />
+          <img src="/p2p1.png" alt="Slide 2" />
+          <img src="/ptp2.png" alt="Slide 2" />
+          <img src="/ptp3.png" alt="Slide 2" />
+          <img src="/ptp4.png" alt="Slide 2" />
+          <img src="/ptp5.png" alt="Slide 2" />
         </Carousel>
 
         <h2
