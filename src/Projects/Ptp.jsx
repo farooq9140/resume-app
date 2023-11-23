@@ -27,13 +27,94 @@ function Ptp() {
         >
           Peer to Peer File System
         </h1>
-        <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/p2p1.png" alt="Slide 2" />
-          <img src="/ptp2.png" alt="Slide 2" />
-          <img src="/ptp3.png" alt="Slide 2" />
-          <img src="/ptp4.png" alt="Slide 2" />
-          <img src="/ptp5.png" alt="Slide 2" />
-        </Carousel>
+
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          style={{ width: "1000px" }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
+        >
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/p2p1.png"
+                alt="Slide 1"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/ptp2.png"
+                alt="Slide 2"
+                style={{ padding: "75px"}}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/ptp3.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/ptp4.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/ptp5.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+        </swiper-container>
 
         <h2
           className="text-left"

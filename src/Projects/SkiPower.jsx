@@ -2,9 +2,8 @@ import Header from "../SharedComps/Header.jsx";
 import React from "react";
 import "../App.css";
 import Bottom from "../SharedComps/Bottom.jsx";
-import { motion} from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { motion } from "framer-motion";
+import "swiper/css/bundle"; // Import Swiper styles
 
 function SkiPower() {
   const buttonVariants = {
@@ -27,21 +26,47 @@ function SkiPower() {
         >
           Ski Power
         </h1>
-        <Carousel
-          style={{ width: "600px" }}
-          className="crsl"
-          infiniteLoop
-          showThumbs={false}
+
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          style={{ width: "750px" }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
         >
-          <img src="/SKI0.png" style={{ width: "600px",height:"500px" }} alt="Slide 1" />
-          <img src="/SKI1.png" style={{ width: "600px",height:"500px" }} alt="Slide 2" />
-          <img src="/SKI2.png" style={{width:"600px"}}alt="Slide 3" />
-          <img src="/SKI3.png" style={{width:"600px",height:"600px"}}alt="Slide 4" />
-          <video controls>
-            <source src="/SKI_VID.mp4" style={{width:"600px",height:"500px"}}type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </Carousel>
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div>
+              <img src="/SKI0.png" alt="Slide 1" style={{ padding: "75px", height:"600px" }} />
+            </div>
+          </swiper-slide>
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div>
+              <img src="/SKI1.png" alt="Slide 2" style={{ padding: "75px" , height:"600px"}} />
+            </div>
+          </swiper-slide>
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div>
+              <img src="/SKI2.png" alt="Slide 3" style={{ padding: "75px", height:"500px" }} />
+            </div>
+          </swiper-slide>
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div>
+              <img src="/SKI3.png" alt="Slide 4" style={{ padding: "75px", height:"600px" }} />
+            </div>
+          </swiper-slide>
+          <swiper-slide style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div>
+              <video controls style={{ padding: "75px", height:"600px" }}>
+                <source src="/SKI_VID.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </swiper-slide>
+        </swiper-container>
 
         <h2
           className="text-left"

@@ -27,13 +27,80 @@ function Robot() {
         >
           Robot drawing and testing
         </h1>
-        <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/robot0.png" alt="Slide 2" />
-          <img src="/robot1.png" alt="Slide 2" />
-          <img src="/robot2.png" alt="Slide 2" />
-          <img src="/robot3.png" alt="Slide 2" />
-        </Carousel>
-
+        
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          style={{ width: "1100px" }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
+        >
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/robot0.png"
+                alt="Slide 1"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/robot1.png"
+                alt="Slide 2"
+                style={{ padding: "75px"}}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/robot2.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/robot3.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        
         <h2
           className="text-left"
           style={{ fontWeight: "bold", fontSize: "28px", width: "750px" }}

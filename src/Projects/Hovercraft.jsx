@@ -2,7 +2,7 @@ import Header from "../SharedComps/Header.jsx";
 import React from "react";
 import "../App.css";
 import Bottom from "../SharedComps/Bottom.jsx";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -27,11 +27,64 @@ function Hovercraft() {
         >
           Hovercraft
         </h1>
-        <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/HC0.png" style={{width:"500px", height:"500px"}} alt="Slide 1" />
-          <img src="/HC2.png" style={{width:"500px", height:"500px"} }alt="Slide 2" />
-          <img src="/HC4.png" style={{width:"600px", height:"500px"}} alt="Slide 3" />
-        </Carousel>
+
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          style={{ width: "750px" }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }}
+        >
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/HC0.png"
+                alt="Slide 1"
+                style={{ padding: "75px", height: "600px",width:"550px" }}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/HC2.png"
+                alt="Slide 2"
+                style={{ padding: "75px"}}
+              />
+            </div>
+          </swiper-slide>
+          <swiper-slide
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div>
+              <img
+                src="/HC4.png"
+                alt="Slide 3"
+                style={{ padding: "75px" }}
+              />
+            </div>
+          </swiper-slide>
+        </swiper-container>
 
         <h2
           className="text-left"
@@ -43,18 +96,17 @@ function Hovercraft() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          In a remarkable engineering endeavor, our team designed and successfully
-        implemented an autonomous hovercraft that showcased unparalleled
-        navigation capabilities. 
+          In a remarkable engineering endeavor, our team designed and
+          successfully implemented an autonomous hovercraft that showcased
+          unparalleled navigation capabilities.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          This cutting-edge project combined Coppeliasim
-        simulation technology with Arduino programming, resulting in an
-        autonomous hovercraft that could navigate through a variety of
-        challenging tracks.
+          This cutting-edge project combined Coppeliasim simulation technology
+          with Arduino programming, resulting in an autonomous hovercraft that
+          could navigate through a variety of challenging tracks.
         </h3>
         <h2
           className="text-left"
@@ -72,77 +124,73 @@ function Hovercraft() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Navigation Excellence:
+            Navigation Excellence:
           </span>
-          The autonomous hovercraft
-        demonstrated exceptional navigation skills, effortlessly tackling
-        diverse tracks and terrains. This achievement was made possible through
-        advanced algorithms and precise control systems.{" "}
+          The autonomous hovercraft demonstrated exceptional navigation skills,
+          effortlessly tackling diverse tracks and terrains. This achievement
+          was made possible through advanced algorithms and precise control
+          systems.{" "}
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Competition Success:
+            Competition Success:
           </span>{" "}
-          Our project gained recognition in a highly competitive Hovercraft Design
-        and Implementation competition, where we competed against over 30 teams.
-        Our autonomous hovercraft's innovative design and outstanding
-        performance earned us the Third Place Award.
+          Our project gained recognition in a highly competitive Hovercraft
+          Design and Implementation competition, where we competed against over
+          30 teams. Our autonomous hovercraft's innovative design and
+          outstanding performance earned us the Third Place Award.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Engineering Innovation:
+            Engineering Innovation:
           </span>{" "}
-          The
-        success of our autonomous hovercraft project underscores our team's
-        commitment to pushing the boundaries of autonomous technology and
-        engineering innovation. It represents a culmination of technical
-        expertise and creative problem-solving.
+          The success of our autonomous hovercraft project underscores our
+          team's commitment to pushing the boundaries of autonomous technology
+          and engineering innovation. It represents a culmination of technical
+          expertise and creative problem-solving.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Robust Sensor Integration:
+            Robust Sensor Integration:
           </span>
-          The
-      autonomous hovercraft's success was greatly attributed to the meticulous
-        integration of a range of sensors, including distance sensors, inertial
-        sensors, and obstacle detection systems. These sensors enabled precise
-        real-time data collection, contributing to its remarkable navigation
-        capabilities. 
+          The autonomous hovercraft's success was greatly attributed to the
+          meticulous integration of a range of sensors, including distance
+          sensors, inertial sensors, and obstacle detection systems. These
+          sensors enabled precise real-time data collection, contributing to its
+          remarkable navigation capabilities.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Adaptive Control Algorithms:
+            Adaptive Control Algorithms:
           </span>{" "}
-          The project featured
-        state-of-the-art control algorithms that allowed the hovercraft to adapt
-        to changing terrains and obstacles, making it capable of navigating
-        diverse tracks with agility and efficiency. 
+          The project featured state-of-the-art control algorithms that allowed
+          the hovercraft to adapt to changing terrains and obstacles, making it
+          capable of navigating diverse tracks with agility and efficiency.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Safety Features:
+            Safety Features:
           </span>
-          Safety was
-        a paramount concern in the project. The hovercraft incorporated safety
-        features such as emergency braking and obstacle avoidance mechanisms to
-        ensure safe operation in real-world scenarios. 
+          Safety was a paramount concern in the project. The hovercraft
+          incorporated safety features such as emergency braking and obstacle
+          avoidance mechanisms to ensure safe operation in real-world scenarios.
         </h3>
-        
+
         <div style={{ width: "750px" }}>
           <h2
             className="text-left"
@@ -180,7 +228,6 @@ function Hovercraft() {
             >
               Arduino
             </div>
-            
           </div>
         </div>
         <div

@@ -117,11 +117,13 @@ function Bottom() {
           © Copyright 2023. Made by Farouq HamedAllah
         </h2>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
-          <h2
-            style={{ cursor: "pointer", color: "#646cff", fontWeight: "500" }}
-          >
-            Site source code
-          </h2>
+          <a href="https://github.com/farooq9140/resume-app" target="_blank">
+            <h2
+              style={{ cursor: "pointer", color: "#646cff", fontWeight: "500" }}
+            >
+              Site source code
+            </h2>
+          </a>
         </motion.div>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.7 }}>
           <h2

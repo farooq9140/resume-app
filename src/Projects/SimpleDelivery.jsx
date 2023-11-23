@@ -5,6 +5,7 @@ import { motion} from "framer-motion";
 import { register } from "swiper/element/bundle";
 import "swiper/css/bundle"; // Import Swiper styles
 import React from "react";
+
 register(); // Register Swiper custom elements
 function SimpleDelivery() {
   const buttonVariants = {
@@ -48,17 +49,17 @@ function SimpleDelivery() {
           </swiper-slide>
           <swiper-slide>
             <div>
-              <img src="/SD1.png" alt="Slide 2" style={{padding:"50px"}}/>
+              <img src="/SD1.png" alt="Slide 2" style={{padding:"75px"}}/>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div>
-              <img src="/SD2.png" alt="Slide 3"style={{padding:"50px"}} />
+              <img src="/SD2.png" alt="Slide 3"style={{padding:"75px"}} />
             </div>
           </swiper-slide>
           <swiper-slide>
             <div>
-              <img src="/SD3.png" alt="Slide 4" style={{padding:"50px"}} />
+              <img src="/SD3.png" alt="Slide 4" style={{padding:"75px"}} />
             </div>
           </swiper-slide>
         </swiper-container>

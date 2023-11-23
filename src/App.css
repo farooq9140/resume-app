@@ -8,7 +8,10 @@
   padding: 2rem;
   text-align: center;
 }
-
+.swiper-button-next,
+.swiper-button-prev {
+  color: red; /* Change to the desired color */
+}
 .logo {
   height: 6em;
   padding: 1.5em;
