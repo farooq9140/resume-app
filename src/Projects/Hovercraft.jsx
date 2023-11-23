@@ -1,12 +1,12 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
+import { motion} from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function FitLife() {
+function Hovercraft() {
   const buttonVariants = {
     hover: {
       scale: 1.01,
@@ -22,11 +22,16 @@ function FitLife() {
           style={{
             marginTop: "30px",
             fontWeight: "bold",
-            marginBottom: "20px",
+            marginBottom: "20 px",
           }}
         >
-          FitLife Coach
+          Hovercraft
         </h1>
+        <Carousel className="crsl" infiniteLoop showThumbs={false}>
+          <img src="/HC0.png" style={{width:"500px", height:"500px"}} alt="Slide 1" />
+          <img src="/HC2.png" style={{width:"500px", height:"500px"} }alt="Slide 2" />
+          <img src="/HC4.png" style={{width:"600px", height:"500px"}} alt="Slide 3" />
+        </Carousel>
 
         <h2
           className="text-left"
@@ -38,19 +43,18 @@ function FitLife() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          FitLife Coach is your personal fitness companion, designed to help you
-        achieve your health and fitness goals with ease. This innovative React
-        Native app is the ideal solution for individuals looking to embark on
-        their fitness journey. 
+          In a remarkable engineering endeavor, our team designed and successfully
+        implemented an autonomous hovercraft that showcased unparalleled
+        navigation capabilities. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-         Whether you're new to the world of fitness or a
-        seasoned pro, FitLife Coach is here to provide you with a tailored
-        workout and nutrition plan that perfectly aligns with your unique needs
-        and goals.
+          This cutting-edge project combined Coppeliasim
+        simulation technology with Arduino programming, resulting in an
+        autonomous hovercraft that could navigate through a variety of
+        challenging tracks.
         </h3>
         <h2
           className="text-left"
@@ -68,88 +72,76 @@ function FitLife() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Personalized Fitness Plan:
+          Navigation Excellence:
           </span>
-          Begin by telling FitLife Coach
-        about yourself. Enter your age, current fitness level, desired goals,
-        and the type of training you prefer. Our intelligent algorithms will
-        analyze this information to create a customized workout plan just for
-        you.
+          The autonomous hovercraft
+        demonstrated exceptional navigation skills, effortlessly tackling
+        diverse tracks and terrains. This achievement was made possible through
+        advanced algorithms and precise control systems.{" "}
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Curated Workout Plan: 
+          Competition Success:
           </span>{" "}
-          Say goodbye to cookie-cutter workout
-        routines. FitLife Coach generates a weekly workout plan, complete with
-        exercises, sets, reps, and rest intervals, all tailored to your fitness
-        level and objectives.
+          Our project gained recognition in a highly competitive Hovercraft Design
+        and Implementation competition, where we competed against over 30 teams.
+        Our autonomous hovercraft's innovative design and outstanding
+        performance earned us the Third Place Award.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Nutrition Guidance:
+          Engineering Innovation:
           </span>{" "}
-          Achieving your fitness goals
-        is not just about exercise – it's also about what you eat. This app
-        provides a curated meal plan for the entire week. It specifies each
-        meal's content, including the number of calories, protein, carbs, and
-        fats you should consume daily.
+          The
+        success of our autonomous hovercraft project underscores our team's
+        commitment to pushing the boundaries of autonomous technology and
+        engineering innovation. It represents a culmination of technical
+        expertise and creative problem-solving.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Recipe Suggestions: 
+          Robust Sensor Integration:
           </span>
-          FitLife Coach makes
-        healthy eating enjoyable with a collection of nutritious recipes that
-        match your meal plan. You'll discover a variety of delicious meals,
-        snacks, and smoothies that align with your fitness objectives. 
+          The
+      autonomous hovercraft's success was greatly attributed to the meticulous
+        integration of a range of sensors, including distance sensors, inertial
+        sensors, and obstacle detection systems. These sensors enabled precise
+        real-time data collection, contributing to its remarkable navigation
+        capabilities. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Progress Tracking:
-          </span>
-          Keep an eye on your progress with built-in tracking tools.
-        Monitor your fitness achievements and nutrition adherence, making it
-        easier to stay committed and reach your goals. 
+          Adaptive Control Algorithms:
+          </span>{" "}
+          The project featured
+        state-of-the-art control algorithms that allowed the hovercraft to adapt
+        to changing terrains and obstacles, making it capable of navigating
+        diverse tracks with agility and efficiency. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Community and Support:
+          Safety Features:
           </span>
-          Join a community of like-minded individuals who are also on their
-        fitness journey. Share your experiences, ask for advice, and motivate
-        each other to achieve your goals. 
+          Safety was
+        a paramount concern in the project. The hovercraft incorporated safety
+        features such as emergency braking and obstacle avoidance mechanisms to
+        ensure safe operation in real-world scenarios. 
         </h3>
-        <h3
-          className="text-left"
-          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
-        >
-          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Daily Reminders: 
-          </span>
-          Don't worry about
-        missing workouts or meals. FitLife Coach sends you daily reminders to
-        keep you on track and focused. FitLife Coach is your trusted partner in
-        achieving a healthier and happier lifestyle. Download it now and take
-        the first step towards a fitter, stronger, and better you. Your fitness
-        journey begins here. 
-        </h3>
-        
         
         <div style={{ width: "750px" }}>
           <h2
@@ -174,7 +166,7 @@ function FitLife() {
                 paddingInline: "12.5px",
               }}
             >
-              React Native
+              Coppeliasim
             </div>
             <div
               style={{
@@ -186,38 +178,38 @@ function FitLife() {
                 paddingInline: "12.5px",
               }}
             >
-              Firebase
+              Arduino
             </div>
-            <div
-              style={{
-                display: "inline-block",
-                backgroundColor: "#BFC3FD",
-                borderRadius: "10px",
-                paddingInline: "12.5px",
-                margin: "2.5px",
-                padding: "5px",
-              }}
-            >
-             SQL
-            </div>
-            <div
-              style={{
-                display: "inline-block",
-                backgroundColor: "#BFC3FD",
-                borderRadius: "10px",
-                paddingInline: "12.5px",
-                margin: "2.5px",
-                padding: "5px",
-              }}
-            >
-              ChatGPT
-            </div>
+            
           </div>
         </div>
         <div
           className="flex justify-left" // Center the content
           style={{ width: "750px", marginTop: "30px", marginBottom: "20px" }}
         >
+          <motion.div whileHover="hover">
+            <motion.a
+              variants={buttonVariants}
+              className="text-center"
+              style={{
+                display: "inline-block",
+                padding: "10px 20px",
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: "#F7F8FF",
+                backgroundColor: "#708AF4",
+                border: "1px solid #24305E",
+                borderRadius: "5px",
+                cursor: "pointer",
+                boxShadow: "5px 5px 10px #888888",
+              }}
+              href="https://github.com/farooq9140/Hovercraft-Project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github Link
+            </motion.a>
+          </motion.div>
         </div>
       </div>
       <Bottom />
@@ -225,4 +217,4 @@ function FitLife() {
   );
 }
 
-export default FitLife;
+export default Hovercraft;

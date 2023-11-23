@@ -1,12 +1,12 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
+import { motion} from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function Ptp() {
+function SkiPower() {
   const buttonVariants = {
     hover: {
       scale: 1.01,
@@ -25,14 +25,22 @@ function Ptp() {
             marginBottom: "20 px",
           }}
         >
-          Peer to Peer File System
+          Ski Power
         </h1>
-        <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/p2p1.png" alt="Slide 2" />
-          <img src="/ptp2.png" alt="Slide 2" />
-          <img src="/ptp3.png" alt="Slide 2" />
-          <img src="/ptp4.png" alt="Slide 2" />
-          <img src="/ptp5.png" alt="Slide 2" />
+        <Carousel
+          style={{ width: "600px" }}
+          className="crsl"
+          infiniteLoop
+          showThumbs={false}
+        >
+          <img src="/SKI0.png" style={{ width: "600px",height:"500px" }} alt="Slide 1" />
+          <img src="/SKI1.png" style={{ width: "600px",height:"500px" }} alt="Slide 2" />
+          <img src="/SKI2.png" style={{width:"600px"}}alt="Slide 3" />
+          <img src="/SKI3.png" style={{width:"600px",height:"600px"}}alt="Slide 4" />
+          <video controls>
+            <source src="/SKI_VID.mp4" style={{width:"600px",height:"500px"}}type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </Carousel>
 
         <h2
@@ -45,21 +53,14 @@ function Ptp() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          The Peer-to-Peer File System project focused on the development of a
-          peer-to-peer communication system, comprising multiple clients and a
-          central server, with the primary objective of enabling the sharing of
-          text files between connected clients.
+          As part of a collaborative team effort, we developed the SkiPower
+          Tracker, a Nordic skiing application that harnesses the capabilities
+          of a load cell sensor, an IMU (Inertial Measurement Unit), a
+          microcontroller, and a GPS sensor. The primary goal of this project
+          was to revolutionize the skiing experience by accurately capturing
+          skiing data.
         </h3>
-        <h3
-          className="text-left"
-          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
-        >
-          The central server served as a pivotal component, maintaining a record
-          of registered clients and facilitating seamless communication among
-          them. Notably, the project was implemented using the Python
-          programming language and featured the creation of a user-friendly
-          graphical user interface (GUI) to enhance the overall user experience.
-        </h3>
+
         <h2
           className="text-left"
           style={{
@@ -76,58 +77,69 @@ function Ptp() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          P2P Communication: 
+            Data Capture:
           </span>
-          The project emphasized the
-        establishment of peer-to-peer communication, eliminating the need for a
-        centralized file repository. This decentralized approach promoted direct
-        communication and file sharing between clients, enhancing efficiency and
-        reducing the load on the central server.{" "}
+          Our team successfully integrated multiple sensors to capture precise
+          skiing data, including power measurements, balance, speed, and
+          distance.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Central Server Functionality:
+            Data Processing:
           </span>{" "}
-          The central server played a critical role in the project by maintaining
-        a registry of all connected clients. It facilitated connections,
-        authenticated users, and mediated the exchange of text files. This
-        centralized coordination ensured smooth and secure communication. 
+          Utilizing React Native, we implemented advanced algorithms for data
+          analysis and interpretation. This enabled us to provide users with
+          comprehensive insights into their skiing performance.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Python Implementation:
+            GPS Integration:
           </span>{" "}
-          The choice of Python as the primary programming language
-        showcased its suitability for network and server-client applications.
-        Python's simplicity and versatility made it an ideal choice for this
-        project, enabling efficient development and testing. 
+          The app includes GPS functionality to record skiing routes and
+          locations, enhancing the user's overall skiing experience.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Graphical User
-        Interface (GUI):
+            Performance Metrics:
           </span>
-          To improve the user experience, a user-friendly GUI was
-        developed, allowing clients to interact with the system easily. The GUI
-        simplified the process of sharing files, viewing connections, and
-        managing communication settings. The Peer-to-Peer File System project
-        highlighted the effectiveness of a decentralized approach to
-        communication and file sharing. By utilizing Python and implementing a
-        user-friendly GUI, it offered an accessible and efficient solution for
-        facilitating peer-to-peer connections and text file sharing among
-        multiple clients, promoting secure and direct interactions in a
-        user-friendly environment.
+          SkiPower Tracker presents detailed performance metrics, allowing users
+          to monitor their progress and make data-driven improvements in their
+          skiing technique.
         </h3>
-        
+        <h3
+          className="text-left"
+          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
+        >
+          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
+            Mapping and Navigation:
+          </span>{" "}
+          Our app features built-in mapping and navigation tools to help users
+          plan and explore new skiing trails.
+        </h3>
+        <h3
+          className="text-left"
+          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
+        >
+          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
+            User-Friendly Interface:
+          </span>
+          The SkiPower Tracker app is designed with a user-friendly interface,
+          making it easy to set up, sync with sensors, and view skiing data. The
+          SkiPower Tracker project represents a successful collaboration in the
+          field of sports technology, bringing together hardware and software
+          expertise to enhance the Nordic skiing experience. The app's
+          development involved sensor integration, algorithm design, and a focus
+          on providing valuable insights to users.
+        </h3>
         <div style={{ width: "750px" }}>
           <h2
             className="text-left"
@@ -151,7 +163,7 @@ function Ptp() {
                 paddingInline: "12.5px",
               }}
             >
-              Python
+              React Native
             </div>
             <div
               style={{
@@ -163,7 +175,7 @@ function Ptp() {
                 paddingInline: "12.5px",
               }}
             >
-              Multi-Threading
+              IMU
             </div>
             <div
               style={{
@@ -175,7 +187,7 @@ function Ptp() {
                 padding: "5px",
               }}
             >
-              PySimpleGUI
+              Microcontroller
             </div>
           </div>
         </div>
@@ -199,7 +211,7 @@ function Ptp() {
                 cursor: "pointer",
                 boxShadow: "5px 5px 10px #888888",
               }}
-              href="https://github.com/farooq9140/Simple-Delivery"
+              href="https://github.com/farooq9140/Ski-Power"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -213,4 +225,4 @@ function Ptp() {
   );
 }
 
-export default Ptp;
+export default SkiPower;

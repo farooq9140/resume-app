@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "@coreui/react": "^5.0.0-beta.1",
+    "@fullpage/react-fullpage": "^0.1.40",
     "@nextui-org/react": "^2.1.13",
     "bootstrap": "^5.3.2",
     "classnames": "^2.3.2",
     "flowbite-react": "^0.6.4",
     "framer-motion": "^10.16.4",
+    "fullpage.js": "^4.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fullpage": "^0.1.1",
     "react-image-filter": "^0.1.2",
     "react-pdf": "^7.5.1",
     "react-responsive-carousel": "^3.2.23",
@@ -28,6 +31,7 @@
     "react-spring": "^9.7.3",
     "react-tsparticles": "^2.12.2",
     "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.4",
     "tsparticles": "^2.12.0"
   },
   "devDependencies": {

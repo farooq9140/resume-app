@@ -1,12 +1,12 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
+import { motion} from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function Robot() {
+function Ptp() {
   const buttonVariants = {
     hover: {
       scale: 1.01,
@@ -25,13 +25,14 @@ function Robot() {
             marginBottom: "20 px",
           }}
         >
-          Robot drawing and testing
+          Peer to Peer File System
         </h1>
         <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/robot0.png" alt="Slide 2" />
-          <img src="/robot1.png" alt="Slide 2" />
-          <img src="/robot2.png" alt="Slide 2" />
-          <img src="/robot3.png" alt="Slide 2" />
+          <img src="/p2p1.png" alt="Slide 2" />
+          <img src="/ptp2.png" alt="Slide 2" />
+          <img src="/ptp3.png" alt="Slide 2" />
+          <img src="/ptp4.png" alt="Slide 2" />
+          <img src="/ptp5.png" alt="Slide 2" />
         </Carousel>
 
         <h2
@@ -44,17 +45,20 @@ function Robot() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          In collaboration with Team WIJ#3, we developed a Python-based Robot
-        Drawing and Movement Program for COEN 448. This project aimed to create
-        a versatile system that could control a robot's movement and drawing on
-        an XY plane. 
+          The Peer-to-Peer File System project focused on the development of a
+          peer-to-peer communication system, comprising multiple clients and a
+          central server, with the primary objective of enabling the sharing of
+          text files between connected clients.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          It excels in thorough testing, ensuring the program's
-        functionality, accuracy, and reliability.
+          The central server served as a pivotal component, maintaining a record
+          of registered clients and facilitating seamless communication among
+          them. Notably, the project was implemented using the Python
+          programming language and featured the creation of a user-friendly
+          graphical user interface (GUI) to enhance the overall user experience.
         </h3>
         <h2
           className="text-left"
@@ -72,75 +76,58 @@ function Robot() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Comprehensive Testing: 
+          P2P Communication: 
           </span>
-          The project places a significant
-        emphasis on testing, covering various dimensions such as statement
-        coverage, decision coverage, condition coverage, and multiple condition
-        coverage. This rigorous testing approach guarantees that the program
-        operates as expected and is free of errors. 
+          The project emphasized the
+        establishment of peer-to-peer communication, eliminating the need for a
+        centralized file repository. This decentralized approach promoted direct
+        communication and file sharing between clients, enhancing efficiency and
+        reducing the load on the central server.{" "}
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Data Capture: 
+          Central Server Functionality:
           </span>{" "}
-          The program
-        captures precise data related to the robot's movement, pen position, and
-        direction, allowing for the creation of drawings and patterns on a grid.
+          The central server played a critical role in the project by maintaining
+        a registry of all connected clients. It facilitated connections,
+        authenticated users, and mediated the exchange of text files. This
+        centralized coordination ensured smooth and secure communication. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Robot Commands:
+          Python Implementation:
           </span>{" "}
-          Users can control the robot's movement, pen status (up
-        or down), and orientation through a set of commands, including move (M),
-        turn (R/L), pen up (U), pen down (D), print (P), and quit (Q). 
+          The choice of Python as the primary programming language
+        showcased its suitability for network and server-client applications.
+        Python's simplicity and versatility made it an ideal choice for this
+        project, enabling efficient development and testing. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Drawing
-        and Movement: 
+          Graphical User
+        Interface (GUI):
           </span>
-          The robot can lower its pen to draw while moving, enabling
-        the creation of intricate designs on the grid. It can also navigate the
-        XY plane following specified commands. 
+          To improve the user experience, a user-friendly GUI was
+        developed, allowing clients to interact with the system easily. The GUI
+        simplified the process of sharing files, viewing connections, and
+        managing communication settings. The Peer-to-Peer File System project
+        highlighted the effectiveness of a decentralized approach to
+        communication and file sharing. By utilizing Python and implementing a
+        user-friendly GUI, it offered an accessible and efficient solution for
+        facilitating peer-to-peer connections and text file sharing among
+        multiple clients, promoting secure and direct interactions in a
+        user-friendly environment.
         </h3>
-        <h3
-          className="text-left"
-          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
-        >
-          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Error Handling:
-          </span>{" "}
-          The program
-        effectively handles invalid input commands and provides feedback for
-        non-valid actions. 
-        </h3>
-        <h3
-          className="text-left"
-          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
-        >
-          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Code Analysis:
-          </span>
-          Code analysis includes function
-        coverage, statement coverage, path coverage, condition coverage, and
-        line coverage to ensure code quality. The Robot Drawing and Movement
-        Program project showcases our collaborative effort in developing a
-        versatile system that controls robot movement and drawing on an XY
-        plane. Its robust testing procedures and comprehensive code analysis
-        make it a reliable and accurate tool for various applications, from art
-        creation to educational programming.
-        </h3>
+        
         <div style={{ width: "750px" }}>
           <h2
             className="text-left"
@@ -176,7 +163,19 @@ function Robot() {
                 paddingInline: "12.5px",
               }}
             >
-              JaCoCo
+              Multi-Threading
+            </div>
+            <div
+              style={{
+                display: "inline-block",
+                backgroundColor: "#BFC3FD",
+                borderRadius: "10px",
+                paddingInline: "12.5px",
+                margin: "2.5px",
+                padding: "5px",
+              }}
+            >
+              PySimpleGUI
             </div>
           </div>
         </div>
@@ -200,7 +199,7 @@ function Robot() {
                 cursor: "pointer",
                 boxShadow: "5px 5px 10px #888888",
               }}
-              href="https://github.com/farooq9140/COEN-448---3"
+              href="https://github.com/farooq9140/Simple-Delivery"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -214,4 +213,4 @@ function Robot() {
   );
 }
 
-export default Robot;
+export default Ptp;

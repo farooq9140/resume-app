@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import { motion, useScroll } from "framer-motion";
+import "../App.css";
+import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
 function Bottom() {

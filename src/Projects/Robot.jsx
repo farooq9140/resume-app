@@ -1,12 +1,12 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
+import { motion} from "framer-motion";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function Hovercraft() {
+function Robot() {
   const buttonVariants = {
     hover: {
       scale: 1.01,
@@ -25,12 +25,13 @@ function Hovercraft() {
             marginBottom: "20 px",
           }}
         >
-          Hovercraft
+          Robot drawing and testing
         </h1>
         <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <img src="/HC0.png" style={{width:"500px", height:"500px"}} alt="Slide 1" />
-          <img src="/HC2.png" style={{width:"500px", height:"500px"} }alt="Slide 2" />
-          <img src="/HC4.png" style={{width:"600px", height:"500px"}} alt="Slide 3" />
+          <img src="/robot0.png" alt="Slide 2" />
+          <img src="/robot1.png" alt="Slide 2" />
+          <img src="/robot2.png" alt="Slide 2" />
+          <img src="/robot3.png" alt="Slide 2" />
         </Carousel>
 
         <h2
@@ -43,18 +44,17 @@ function Hovercraft() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          In a remarkable engineering endeavor, our team designed and successfully
-        implemented an autonomous hovercraft that showcased unparalleled
-        navigation capabilities. 
+          In collaboration with Team WIJ#3, we developed a Python-based Robot
+        Drawing and Movement Program for COEN 448. This project aimed to create
+        a versatile system that could control a robot's movement and drawing on
+        an XY plane. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          This cutting-edge project combined Coppeliasim
-        simulation technology with Arduino programming, resulting in an
-        autonomous hovercraft that could navigate through a variety of
-        challenging tracks.
+          It excels in thorough testing, ensuring the program's
+        functionality, accuracy, and reliability.
         </h3>
         <h2
           className="text-left"
@@ -72,77 +72,75 @@ function Hovercraft() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Navigation Excellence:
+          Comprehensive Testing: 
           </span>
-          The autonomous hovercraft
-        demonstrated exceptional navigation skills, effortlessly tackling
-        diverse tracks and terrains. This achievement was made possible through
-        advanced algorithms and precise control systems.{" "}
+          The project places a significant
+        emphasis on testing, covering various dimensions such as statement
+        coverage, decision coverage, condition coverage, and multiple condition
+        coverage. This rigorous testing approach guarantees that the program
+        operates as expected and is free of errors. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Competition Success:
+          Data Capture: 
           </span>{" "}
-          Our project gained recognition in a highly competitive Hovercraft Design
-        and Implementation competition, where we competed against over 30 teams.
-        Our autonomous hovercraft's innovative design and outstanding
-        performance earned us the Third Place Award.
+          The program
+        captures precise data related to the robot's movement, pen position, and
+        direction, allowing for the creation of drawings and patterns on a grid.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Engineering Innovation:
+          Robot Commands:
           </span>{" "}
-          The
-        success of our autonomous hovercraft project underscores our team's
-        commitment to pushing the boundaries of autonomous technology and
-        engineering innovation. It represents a culmination of technical
-        expertise and creative problem-solving.
+          Users can control the robot's movement, pen status (up
+        or down), and orientation through a set of commands, including move (M),
+        turn (R/L), pen up (U), pen down (D), print (P), and quit (Q). 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Robust Sensor Integration:
+          Drawing
+        and Movement: 
           </span>
-          The
-      autonomous hovercraft's success was greatly attributed to the meticulous
-        integration of a range of sensors, including distance sensors, inertial
-        sensors, and obstacle detection systems. These sensors enabled precise
-        real-time data collection, contributing to its remarkable navigation
-        capabilities. 
+          The robot can lower its pen to draw while moving, enabling
+        the creation of intricate designs on the grid. It can also navigate the
+        XY plane following specified commands. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Adaptive Control Algorithms:
+          Error Handling:
           </span>{" "}
-          The project featured
-        state-of-the-art control algorithms that allowed the hovercraft to adapt
-        to changing terrains and obstacles, making it capable of navigating
-        diverse tracks with agility and efficiency. 
+          The program
+        effectively handles invalid input commands and provides feedback for
+        non-valid actions. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Safety Features:
+          Code Analysis:
           </span>
-          Safety was
-        a paramount concern in the project. The hovercraft incorporated safety
-        features such as emergency braking and obstacle avoidance mechanisms to
-        ensure safe operation in real-world scenarios. 
+          Code analysis includes function
+        coverage, statement coverage, path coverage, condition coverage, and
+        line coverage to ensure code quality. The Robot Drawing and Movement
+        Program project showcases our collaborative effort in developing a
+        versatile system that controls robot movement and drawing on an XY
+        plane. Its robust testing procedures and comprehensive code analysis
+        make it a reliable and accurate tool for various applications, from art
+        creation to educational programming.
         </h3>
-        
         <div style={{ width: "750px" }}>
           <h2
             className="text-left"
@@ -166,7 +164,7 @@ function Hovercraft() {
                 paddingInline: "12.5px",
               }}
             >
-              Coppeliasim
+              Python
             </div>
             <div
               style={{
@@ -178,9 +176,8 @@ function Hovercraft() {
                 paddingInline: "12.5px",
               }}
             >
-              Arduino
+              JaCoCo
             </div>
-            
           </div>
         </div>
         <div
@@ -203,7 +200,7 @@ function Hovercraft() {
                 cursor: "pointer",
                 boxShadow: "5px 5px 10px #888888",
               }}
-              href="https://github.com/farooq9140/Hovercraft-Project"
+              href="https://github.com/farooq9140/COEN-448---3"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -217,4 +214,4 @@ function Hovercraft() {
   );
 }
 
-export default Hovercraft;
+export default Robot;

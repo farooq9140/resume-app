@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
-import { motion, useScroll } from "framer-motion";
+import React from "react";
+import "../App.css";
+import { motion} from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
-function Header() {
+function Header({ backgroundColor = "#24305E" }) {
   return (
     <div style={{marginBottom:"60px"}}>
       <div
         className="fixed-div"
         id="header"
-        style={{ backgroundColor: "#24305E" }}
+        style={{ backgroundColor: backgroundColor }}
       >
         <div className="text-style">
           <HashLink to="/#farouq-section" smooth>

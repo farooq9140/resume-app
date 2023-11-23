@@ -1,12 +1,10 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-function SchoolPortal() {
+function FitLife() {
   const buttonVariants = {
     hover: {
       scale: 1.01,
@@ -25,7 +23,7 @@ function SchoolPortal() {
             marginBottom: "20px",
           }}
         >
-          School Portal
+          FitLife Coach
         </h1>
 
         <h2
@@ -38,18 +36,19 @@ function SchoolPortal() {
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          During my internship at SquareOne Technologies, I had the privilege of
-        contributing to the development of a comprehensive school portal that
-        significantly improved the educational experience. 
+          FitLife Coach is your personal fitness companion, designed to help you
+        achieve your health and fitness goals with ease. This innovative React
+        Native app is the ideal solution for individuals looking to embark on
+        their fitness journey. 
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
-          This project
-        encompassed the creation of a user-friendly Mendix app and website,
-        serving as a vital platform for teachers, parents, and guests within the
-        educational community.
+         Whether you're new to the world of fitness or a
+        seasoned pro, FitLife Coach is here to provide you with a tailored
+        workout and nutrition plan that perfectly aligns with your unique needs
+        and goals.
         </h3>
         <h2
           className="text-left"
@@ -67,58 +66,86 @@ function SchoolPortal() {
           style={{ width: "750px", fontSize: "18px", margin: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Seamless Communication:
+          Personalized Fitness Plan:
           </span>
-          The school portal was designed
-        to promote seamless communication between teachers, parents, and the
-        educational institution. It offered features such as messaging systems,
-        event notifications, and real-time updates to foster collaboration and
-        enhance the learning environment.
+          Begin by telling FitLife Coach
+        about yourself. Enter your age, current fitness level, desired goals,
+        and the type of training you prefer. Our intelligent algorithms will
+        analyze this information to create a customized workout plan just for
+        you.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Efficient Administrative Tasks:
+          Curated Workout Plan: 
           </span>{" "}
-          My
-        role involved actively implementing essential functionalities that
-        streamlined administrative tasks. This included features for managing
-        student records, class schedules, attendance, and grade tracking,
-        simplifying the daily workflow for teachers and administrators.
+          Say goodbye to cookie-cutter workout
+        routines. FitLife Coach generates a weekly workout plan, complete with
+        exercises, sets, reps, and rest intervals, all tailored to your fitness
+        level and objectives.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Guest-Friendly Enrollment:
+          Nutrition Guidance:
           </span>{" "}
-          The portal extended its usability to guests,
-        simplifying the enrollment process for new students and providing easy
-        access to essential school information. This feature enhanced
-        accessibility and the onboarding experience for prospective students and
-        parents. 
+          Achieving your fitness goals
+        is not just about exercise – it's also about what you eat. This app
+        provides a curated meal plan for the entire week. It specifies each
+        meal's content, including the number of calories, protein, carbs, and
+        fats you should consume daily.
         </h3>
         <h3
           className="text-left"
           style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
         >
           <span style={{ fontWeight: "bold", marginRight: "5px" }}>
-          Technology-Driven Solutions:
+          Recipe Suggestions: 
           </span>
-          The project exemplified a
-        commitment to using technology-driven solutions to improve educational
-        processes. Leveraging my skills in Mendix, CSS, SQL, and Java, we
-        harnessed the power of modern technology to create an innovative
-        platform that met the diverse needs of the educational community. The
-        School Portal Development project underscored the importance of
-        technology in enhancing the educational experience. It provided a
-        user-friendly, all-in-one platform that improved communication,
-        streamlined administrative tasks, and extended its benefits to guests,
-        ultimately contributing to the advancement of educational processes and
-        community collaboration.
+          FitLife Coach makes
+        healthy eating enjoyable with a collection of nutritious recipes that
+        match your meal plan. You'll discover a variety of delicious meals,
+        snacks, and smoothies that align with your fitness objectives. 
+        </h3>
+        <h3
+          className="text-left"
+          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
+        >
+          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
+          Progress Tracking:
+          </span>
+          Keep an eye on your progress with built-in tracking tools.
+        Monitor your fitness achievements and nutrition adherence, making it
+        easier to stay committed and reach your goals. 
+        </h3>
+        <h3
+          className="text-left"
+          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
+        >
+          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
+          Community and Support:
+          </span>
+          Join a community of like-minded individuals who are also on their
+        fitness journey. Share your experiences, ask for advice, and motivate
+        each other to achieve your goals. 
+        </h3>
+        <h3
+          className="text-left"
+          style={{ width: "750px", fontSize: "18px", marginTop: "10px" }}
+        >
+          <span style={{ fontWeight: "bold", marginRight: "5px" }}>
+          Daily Reminders: 
+          </span>
+          Don't worry about
+        missing workouts or meals. FitLife Coach sends you daily reminders to
+        keep you on track and focused. FitLife Coach is your trusted partner in
+        achieving a healthier and happier lifestyle. Download it now and take
+        the first step towards a fitter, stronger, and better you. Your fitness
+        journey begins here. 
         </h3>
         
         
@@ -145,7 +172,7 @@ function SchoolPortal() {
                 paddingInline: "12.5px",
               }}
             >
-              Mendix
+              React Native
             </div>
             <div
               style={{
@@ -157,7 +184,7 @@ function SchoolPortal() {
                 paddingInline: "12.5px",
               }}
             >
-              Java
+              Firebase
             </div>
             <div
               style={{
@@ -181,7 +208,7 @@ function SchoolPortal() {
                 padding: "5px",
               }}
             >
-              CSS
+              ChatGPT
             </div>
           </div>
         </div>
@@ -196,4 +223,4 @@ function SchoolPortal() {
   );
 }
 
-export default SchoolPortal;
+export default FitLife;

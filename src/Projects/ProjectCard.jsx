@@ -1,7 +1,7 @@
 // ProjectCard.js
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Card, CardBody, CardFooter } from "@nextui-org/react";
+import { Card, CardBody} from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {

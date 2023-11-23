@@ -1,11 +1,11 @@
-import Header from "./Header.jsx";
+import Header from "../SharedComps/Header.jsx";
+import "../App.css";
+import Bottom from "../SharedComps/Bottom.jsx";
+import { motion} from "framer-motion";
+import { register } from "swiper/element/bundle";
+import "swiper/css/bundle"; // Import Swiper styles
 import React from "react";
-import "./App.css";
-import Bottom from "./Bottom.jsx";
-import { motion, useScroll } from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+register(); // Register Swiper custom elements
 function SimpleDelivery() {
   const buttonVariants = {
     hover: {
@@ -15,7 +15,7 @@ function SimpleDelivery() {
   };
 
   return (
-    <div className="fullscreen-div">
+    <div className="fullscreen-div" style={{fontFamily:"monospace", fontSize:"1.05em"}}>
       <Header />
       <div className="flex flex-col items-center justify-center h-auto">
         <h1
@@ -27,15 +27,41 @@ function SimpleDelivery() {
         >
           Simple Delivery
         </h1>
-        <Carousel className="crsl" infiniteLoop showThumbs={false}>
-          <video controls>
-            <source src="/Simply_delivered.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <img src="/SD1.png" alt="Slide 2" />
-          <img src="/SD2.png" alt="Slide 2" />
-          <img src="/SD3.png" alt="Slide 2" />
-        </Carousel>
+        <swiper-container
+          slides-per-view="1"
+          speed="500"
+          loop="true"
+          style={{ width: "1300px" }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          pagination={{ clickable: true }} 
+        >
+          <swiper-slide>
+            <div>
+              <video controls style={{padding:"75px"}}>
+                <source src="/Simply_delivered.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div>
+              <img src="/SD1.png" alt="Slide 2" style={{padding:"50px"}}/>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div>
+              <img src="/SD2.png" alt="Slide 3"style={{padding:"50px"}} />
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div>
+              <img src="/SD3.png" alt="Slide 4" style={{padding:"50px"}} />
+            </div>
+          </swiper-slide>
+        </swiper-container>
 
         <h2
           className="text-left"

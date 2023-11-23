@@ -1,39 +1,8 @@
 import "./App.css";
-import { Document, Page, pdfjs } from "react-pdf"; // Import the necessary PDF components
-import React, { useState } from "react";
-import { Card, CardBody } from "@nextui-org/react";
-import { motion } from "framer-motion";
-import ImageFilter from "react-image-filter";
-import { Link } from "react-router-dom";
-import ProjectCard from "./ProjectCard";
+import React from "react";
+import ProjectCard from "./Projects/ProjectCard";
 
 function AboutMe() {
-  const [isMoreVisible, setIsMoreVisible] = useState(false);
-
-  const toggleMoreVisibility = () => {
-    setIsMoreVisible(!isMoreVisible);
-  };
-
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  const [fileUrl, setFileUrl] = useState(null);
-  pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-  const handleButtonClick = () => {
-    // When the button is clicked, you can set the file URL
-    const fileUrl = "/CV_Farouq_HamedAllah.pdf";
-    setFileUrl(fileUrl);
-  };
-
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
-
-  const [isVideoVisible, setIsVideoVisible] = useState(false);
-
-  const toggleVideoVisibility = () => {
-    setIsVideoVisible(!isVideoVisible);
-  };
-
   return (
     <div className="full-width-div">
       <div className="centered-div" style={{ backgroundColor: "#ECEEFF" }}>
