@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       >
         <motion.div
           whileHover={{ scale: 1.05 }}
-          onHoverStart={() => setIsHovered(true)}
+          onHoverStart={() => setIsHovered(true)}//change background color
           onHoverEnd={() => setIsHovered(false)}
           transition={{ duration: 0.3 }}
         >

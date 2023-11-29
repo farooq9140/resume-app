@@ -3,7 +3,6 @@ import React from "react";
 import "../App.css";
 import Bottom from "../SharedComps/Bottom.jsx";
 import { motion} from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 function Ptp() {
@@ -15,7 +14,8 @@ function Ptp() {
   };
 
   return (
-    <div className="fullscreen-div">
+    <div className="fullscreen-div"  style={{fontFamily:"monospace", fontSize:"1.05em"}}>
+      
       <Header />
       <div className="flex flex-col items-center justify-center h-auto">
         <h1
@@ -280,7 +280,7 @@ function Ptp() {
                 cursor: "pointer",
                 boxShadow: "5px 5px 10px #888888",
               }}
-              href="https://github.com/farooq9140/Simple-Delivery"
+              href="https://github.com/timotheeduthoit/COEN366_Project"
               target="_blank"
               rel="noopener noreferrer"
             >

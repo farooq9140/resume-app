@@ -37,7 +37,6 @@ function App() {
           style={{ scaleX: scrollYProgress }}
         />
       </div>
-
       <Particles_Background/>
 
       <div style={{ height: "100vh" }}>

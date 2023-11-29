@@ -13,7 +13,7 @@ function SchoolPortal() {
   };
 
   return (
-    <div className="fullscreen-div">
+    <div className="fullscreen-div"  style={{fontFamily:"monospace", fontSize:"1.05em"}}>
       <Header />
       <div className="flex flex-col items-center justify-center h-auto">
         <h1
